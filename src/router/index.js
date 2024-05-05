@@ -1,18 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '@/pages/HomePage'
-import GameBoard from '@/pages/GameBoard'
+import HomePage from '@/pages/SankAndLadder.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomePage
+    component: HomePage,
+    meta: {
+      title: 'Snake & Ladder | Home',
+    }
   },
-  {
-    path: '/game-board',
-    name: 'gameBoard',
-    component: GameBoard
-  }
 ]
 
 const router = createRouter({
