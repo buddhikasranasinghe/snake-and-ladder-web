@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-950">
+  <div class="bg-primary">
     <router-view/>
   </div>
 </template>

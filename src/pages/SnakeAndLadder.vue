@@ -1,11 +1,13 @@
 <template>
   <div class="md:flex md:flex-row h-screen">
     <SetupWizard v-if="currentPage === 'setup-wizard'" @players="setPlayers"/>
+    <InitialRolling v-if="currentPage === 'choose-players-turn'" :players="players"/>
   </div>
 </template>
 
 <script>
 import SetupWizard from '@/components/SetupWizad'
+import InitialRolling from '@/components/InitialRolling'
 import {ref} from 'vue'
 
 const players = ref([])
@@ -15,7 +17,7 @@ function setPlayers(generatedPlayers) {
   players.value = generatedPlayers
 
   if (players.value.length > 1) {
-    changeCurrentPage('choose-players_tern')
+    changeCurrentPage('choose-players-turn')
   }
 }
 
@@ -29,7 +31,8 @@ export default {
   },
 
   components: {
-    SetupWizard
+    SetupWizard,
+    InitialRolling
   },
 }
 </script>

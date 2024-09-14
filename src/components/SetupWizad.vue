@@ -1,11 +1,11 @@
 <template>
   <div class="md:flex md:flex-row h-screen w-full">
     <div class="my-10 w-full md:w-2/5 flex">
-      <p class="mx-auto md:my-auto text-teal-300 text-6xl md:text-9xl font-bold">Snake & <br/>Ladder</p>
+      <p class="mx-auto md:my-auto text-teal-300 text-6xl md:text-9xl font-bold font-play">Snake & <br/>Ladder</p>
     </div>
     <div class="w-full md:w-3/5 md:flex">
       <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow mx-auto my-auto w-2/3">
-        <span class="text-4xl font-bold">Let's Play</span>
+        <span class="text-4xl font-bold font-play">Let's Play</span>
         <div class="mt-6 md:flex md:justify-between">
           <label for="counter-input" class="block mb-1 text-sm text-xl text-gray-900">Number of players</label>
           <div class="relative flex items-center ">
